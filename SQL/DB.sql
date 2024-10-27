@@ -1,6 +1,6 @@
-USE [QL_sach_nam]
+USE [QL_sach]
 GO
-/****** Object:  Table [dbo].[GiaoDichMuonTra]    Script Date: 26/10/2024 23:05:52 ******/
+/****** Object:  Table [dbo].[GiaoDichMuonTra]    Script Date: 27/10/2024 8:37:47 SA ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ CREATE TABLE [dbo].[GiaoDichMuonTra](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhachHang]    Script Date: 26/10/2024 23:05:53 ******/
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 27/10/2024 8:37:47 SA ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -34,7 +34,7 @@ CREATE TABLE [dbo].[KhachHang](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NhanVien]    Script Date: 26/10/2024 23:05:53 ******/
+/****** Object:  Table [dbo].[NhanVien]    Script Date: 27/10/2024 8:37:47 SA ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -49,7 +49,7 @@ CREATE TABLE [dbo].[NhanVien](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Sach]    Script Date: 26/10/2024 23:05:53 ******/
+/****** Object:  Table [dbo].[Sach]    Script Date: 27/10/2024 8:37:47 SA ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -103,7 +103,7 @@ INSERT [dbo].[KhachHang] ([MaKhachHang], [TenKhachHang], [ThongTinLienLac]) VALU
 GO
 INSERT [dbo].[KhachHang] ([MaKhachHang], [TenKhachHang], [ThongTinLienLac]) VALUES (N'KH09999', N'999', N'9999999999')
 GO
-INSERT [dbo].[NhanVien] ([MaNhanVien], [HoTen], [ChucVu]) VALUES (N'NV0003', N'Phạm Văn M', N'Thủ thư')
+INSERT [dbo].[NhanVien] ([MaNhanVien], [HoTen], [ChucVu]) VALUES (N'NV0003', N'Phạm Văn M', N'Thủ thư a')
 GO
 INSERT [dbo].[NhanVien] ([MaNhanVien], [HoTen], [ChucVu]) VALUES (N'NV0004', N'Lê Anh N', N'Bảo vệ')
 GO
@@ -155,7 +155,7 @@ ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[GiaoDichMuonTra] CHECK CONSTRAINT [FK__GiaoDichM__MaSac__412EB0B6]
 GO
-/****** Object:  StoredProcedure [dbo].[SP_API]    Script Date: 26/10/2024 23:05:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_API]    Script Date: 27/10/2024 8:37:47 SA ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
