@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thư viện</title>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery-ui.min.js"></script>
+    <script src="javascript/jquery-ui.js"></script>
+    <script src="javascript/jquery-confirm.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <link href="javascript/jquery-confirm.min.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Quản lý thư viện</h1>
+    <div id="content">
+        <div class="section">
+            <h2>Nhân Viên</h2>
+            <button class="add-btn" onclick="them_nhanvien()">Thêm Nhân Viên</button>
+            <div class="section" id="nhanvien-container">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Khách Hàng</h2>
+            <button class="add-btn" onclick="them_khachhang()">Thêm Khách Hàng</button>
+            <div class="section" id="khachhang-container">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Sách</h2>
+            <button class="add-btn" onclick="them_sach()">Thêm Sách</button>
+            <div class="section" id="sach-container">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
